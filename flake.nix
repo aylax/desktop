@@ -83,13 +83,14 @@
         hosts = {
           /* set host specific properties here */
           NixOS = { };
+          hub = { };
         };
         importables = rec {
           profiles = digga.lib.importers.rakeLeaves ./profiles // {
             users = digga.lib.importers.rakeLeaves ./users;
           };
           suites = with profiles; rec {
-            base = [ core users.nixos users.root ];
+            base = [ core users.aylax users.root ];
           };
         };
       };
