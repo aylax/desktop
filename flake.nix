@@ -5,7 +5,12 @@
     {
       nixos.url = "nixpkgs/nixos-unstable";
       latest.url = "nixpkgs";
-      digga.url = "github:divnix/digga";
+      digga = {
+        type = "github";
+        owner = "divnix";
+        repo = "digga";
+        rev = "f69703abc33f221b676966a8435c4f09ef70ff49";
+      };
 
       ci-agent = {
         url = "github:hercules-ci/hercules-ci-agent";
