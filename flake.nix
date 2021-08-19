@@ -61,11 +61,11 @@
           imports = [ (digga.lib.importers.overlays ./overlays) ];
           overlays = [
             ./pkgs/default.nix
-            pkgs.overlay # for `srcs`
+            pkgs.overlay
             nur.overlay
             agenix.overlay
-	    emacs.overlay
-	    neovim.overlay
+            emacs.overlay
+            neovim.overlay
           ];
         };
         latest = { };
@@ -107,16 +107,16 @@
           };
           suites = with profiles; rec {
             base = [ core users.aylax users.root ];
-	    workstation = [
-	      core
-	      users.root
-	      users.aylax
-	      network
-	      openssh
-	      develop
-	      printing
-	      graphical
-	    ];
+            workstation = [
+              core
+              users.root
+              users.aylax
+              network
+              openssh
+              develop
+              printing
+              graphical
+            ];
           };
         };
       };

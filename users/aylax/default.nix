@@ -5,7 +5,14 @@ let
 in
 {
   home-manager.users.aylax = { suites, ... }: {
-    imports = suites.base;
+    imports = suites.base ++ [
+      ../profiles/git
+      ../profiles/emacs
+      # ../profiles/neovim
+      ../profiles/direnv
+      ../profiles/alacritty
+      ../profiles/syncthing
+    ];
   };
 
   users.users.aylax = {
@@ -13,7 +20,7 @@ in
     password = "linux";
     description = "AyLax";
     isNormalUser = true;
-    extraGroups = [ 
+    extraGroups = [
       "wheel"
       "docker"
     ];

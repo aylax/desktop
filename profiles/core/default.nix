@@ -28,19 +28,19 @@ in
       whois
 
       # standard comands
-      jq             # :for fomat json
-      fd             # :power [ find ]
-      git            # :for version control
-      curl           # :for network
-      gotop          # :replace [ top ]
-      neovim         # :replace [ vim ]
-      pandoc         # :for transfer file
-      wget           # :for network
-      tokei          # :replace [ loc ]
-      fzf            # :for luzzy search
-      exa            # :replace [ ls tree ]
-      zoxide         # :for quick cd
-      ripgrep        # :replace [ grep ]
+      jq # :for fomat json
+      fd # :power [ find ]
+      git # :for version control
+      curl # :for network
+      gotop # :replace [ top ]
+      #  neovim # :replace [ vim ]
+      pandoc # :for transfer file
+      wget # :for network
+      tokei # :replace [ loc ]
+      fzf # :for luzzy search
+      exa # :replace [ ls tree ]
+      zoxide # :for quick cd
+      ripgrep # :replace [ grep ]
     ];
 
     shellAliases =
@@ -59,16 +59,16 @@ in
         # grep
         grep = "rg";
         gi = "grep -i";
-	
-	# ls
-	ls = "exa";
-	tree = "exa -T";
+
+        # ls
+        ls = "exa";
+        tree = "exa -T";
 
         # top
         top = "gotop";
 
-	# loc
-	loc = "tokei";
+        # loc
+        loc = "tokei";
 
         # internet ip
         myip = "dig +short myip.opendns.com @208.67.222.222 2>&1";
