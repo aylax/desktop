@@ -8,7 +8,7 @@ in
     imports = suites.base ++ [
       ../profiles/git
       ../profiles/emacs
-      # ../profiles/neovim
+      ../profiles/neovim
       ../profiles/direnv
       ../profiles/alacritty
       ../profiles/syncthing
