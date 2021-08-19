@@ -33,8 +33,6 @@
 
       #      neovim.url = "github:nix-community/neovim-nightly-overlay";
 
-      nixpkgs.follows = "nixos";
-
     };
 
   outputs =
