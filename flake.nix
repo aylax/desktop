@@ -5,7 +5,12 @@
     {
       nixos.url = "nixpkgs/nixos-unstable";
       latest.url = "nixpkgs";
-      digga.url = "github:divnix/digga";
+      digga = {
+        type = "github";
+        owner = "divnix";
+        repo = "digga";
+        rev = "f69703abc33f221b676966a8435c4f09ef70ff49";
+      };
 
       ci-agent = {
         url = "github:hercules-ci/hercules-ci-agent";
@@ -29,9 +34,22 @@
       pkgs.url = "path:./pkgs";
       pkgs.inputs.nixpkgs.follows = "nixos";
 
-      #      emacs.url = "github:nix-community/emacs-overlay";
+      emacs = {
+        type = "github";
+        owner = "nix-community";
+        repo = "emacs-overlay";
+        rev = "de44618b3268c7d3c3d4c40e1c5e662b93f5f658";
 
-      #      neovim.url = "github:nix-community/neovim-nightly-overlay";
+      };
+
+      neovim = {
+        type = "github";
+        owner = "nix-community";
+        repo = "neovim-nightly-overlay";
+        rev = "ad6fda0e81cd8dab6326dc1a45b11024ebcda5c2";
+      };
+
+      nixpkgs.follows = "nixos";
 
     };
 
@@ -45,8 +63,8 @@
     , nixos-hardware
     , nur
     , agenix
-      #    , emacs
-      #    , neovim
+    , emacs
+    , neovim
     , ...
     } @ inputs:
     digga.lib.mkFlake {
@@ -62,8 +80,8 @@
             pkgs.overlay
             nur.overlay
             agenix.overlay
-            #            emacs.overlay
-            #            neovim.overlay
+            emacs.overlay
+            neovim.overlay
           ];
         };
         latest = { };
