@@ -53,8 +53,8 @@ in
         "...." = "cd ../../..";
         "....." = "cd ../../../..";
 
-        # git
-        g = "git";
+        # nvim
+        vim = "nvim";
 
         # grep
         grep = "rg";
@@ -123,7 +123,7 @@ in
     '';
     interactiveShellInit = ''
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
-      export PATH = "$HOME/.local/bin:$PATH"
+      export PATH="$HOME/.local/bin:$PATH"
     '';
   };
 
