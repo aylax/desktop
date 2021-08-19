@@ -9,36 +9,39 @@ in
   environment = {
 
     systemPackages = with pkgs; [
+      # devos added
       binutils
       coreutils
-      curl
       direnv
       dnsutils
       dosfstools
-      fd
-      git
-      gotop
       gptfdisk
       iputils
-      jq
       manix
       moreutils
       nix-index
       nmap
-      ripgrep
       skim
       tealdeer
       usbutils
       utillinux
       whois
-    ];
 
-    shellInit = ''
-      export STARSHIP_CONFIG=${
-        pkgs.writeText "starship.toml"
-        (fileContents ./starship.toml)
-      }
-    '';
+      # standard comands
+      jq             # :for fomat json
+      fd             # :power [ find ]
+      git            # :for version control
+      curl           # :for network
+      gotop          # :replace [ top ]
+      neovim         # :replace [ vim ]
+      pandoc         # :for transfer file
+      wget           # :for network
+      tokei          # :replace [ loc ]
+      fzf            # :for luzzy search
+      exa            # :replace [ ls tree ]
+      zoxide         # :for quick cd
+      ripgrep        # :replace [ grep ]
+    ];
 
     shellAliases =
       let ifSudo = lib.mkIf config.security.sudo.enable;
@@ -56,45 +59,22 @@ in
         # grep
         grep = "rg";
         gi = "grep -i";
-
-        # internet ip
-        myip = "dig +short myip.opendns.com @208.67.222.222 2>&1";
-
-        # nix
-        n = "nix";
-        np = "n profile";
-        ni = "np install";
-        nr = "np remove";
-        ns = "n search --no-update-lock-file";
-        nf = "n flake";
-        nepl = "n repl '<nixpkgs>'";
-        srch = "ns nixos";
-        orch = "ns override";
-        nrb = ifSudo "sudo nixos-rebuild";
-        mn = ''
-          manix "" | grep '^# ' | sed 's/^# \(.*\) (.*/\1/;s/ (.*//;s/^# //' | sk --preview="manix '{}'" | xargs manix
-        '';
-
-        # fix nixos-option
-        nixos-option = "nixos-option -I nixpkgs=${self}/lib/compat";
-
-        # sudo
-        s = ifSudo "sudo -E ";
-        si = ifSudo "sudo -i";
-        se = ifSudo "sudoedit";
+	
+	# ls
+	ls = "exa";
+	tree = "exa -T";
 
         # top
         top = "gotop";
 
-        # systemd
-        ctl = "systemctl";
-        stl = ifSudo "s systemctl";
-        utl = "systemctl --user";
-        ut = "systemctl --user start";
-        un = "systemctl --user stop";
-        up = ifSudo "s systemctl start";
-        dn = ifSudo "s systemctl stop";
-        jtl = "journalctl";
+	# loc
+	loc = "tokei";
+
+        # internet ip
+        myip = "dig +short myip.opendns.com @208.67.222.222 2>&1";
+
+        # fix nixos-option
+        nixos-option = "nixos-option -I nixpkgs=${self}/lib/compat";
 
       };
   };
@@ -134,19 +114,17 @@ in
 
   };
 
+  # powerful shell
+  programs.xonsh.enable = true;
+
   programs.bash = {
     promptInit = ''
       eval "$(${pkgs.starship}/bin/starship init bash)"
     '';
     interactiveShellInit = ''
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
+      export PATH = "$HOME/.local/bin:$PATH"
     '';
-  };
-
-  # For rage encryption, all hosts need a ssh key pair
-  services.openssh = {
-    enable = true;
-    openFirewall = lib.mkDefault false;
   };
 
   services.earlyoom.enable = true;
