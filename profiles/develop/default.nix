@@ -5,7 +5,7 @@
 
     # program languages
     nodejs
-     rustup
+    rustup
     ghc
     haskellPackages.stack
 
