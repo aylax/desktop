@@ -30,3 +30,35 @@ indent_size = 4
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+[*.el]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
+
+[*.lua]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespae = unset
+indent_style = unset
+indent_size = unset
+
+[config]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespae = unset
+indent_style = unset
+indent_size = unset
+
+[*.rasi]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespae = unset
+indent_style = unset
+indent_size = unset

@@ -1,0 +1,17 @@
+;;; early-init.el --- early init file.
+
+;;; Commentary:
+
+;; The file before the file that starts it all.
+
+;;; Code:
+
+;; Native-Comp
+
+
+;; Start in Fundemental mode
+;; (setq initial-major-mode 'fundamental-mode)
+
+
+
+;;; early-init.el ends here

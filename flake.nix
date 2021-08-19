@@ -108,15 +108,9 @@
           suites = with profiles; rec {
             base = [ core users.aylax users.root ];
 	    workstation = [
-
-	      # hosts
 	      core
-
-	      # users
 	      users.root
 	      users.aylax
-
-	      # profiles
 	      network
 	      openssh
 	      develop
