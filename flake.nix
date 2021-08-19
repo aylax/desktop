@@ -29,9 +29,9 @@
       pkgs.url = "path:./pkgs";
       pkgs.inputs.nixpkgs.follows = "nixos";
 
-      emacs.url = "github:nix-community/emacs-overlay";
+      #      emacs.url = "github:nix-community/emacs-overlay";
 
-      neovim.url = "github:nix-community/neovim-nightly-overlay";
+      #      neovim.url = "github:nix-community/neovim-nightly-overlay";
 
       nixpkgs.follows = "nixos";
 
@@ -47,8 +47,8 @@
     , nixos-hardware
     , nur
     , agenix
-    , emacs
-    , neovim
+      #    , emacs
+      #    , neovim
     , ...
     } @ inputs:
     digga.lib.mkFlake {
@@ -64,8 +64,8 @@
             pkgs.overlay
             nur.overlay
             agenix.overlay
-            emacs.overlay
-            neovim.overlay
+            #            emacs.overlay
+            #            neovim.overlay
           ];
         };
         latest = { };
