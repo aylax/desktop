@@ -1,12 +1,11 @@
 { pkgs, ... }: {
-  programs.emacs = {
+  xsession.windowManger.xmonad = {
     enable = true;
-    package = pkgs.emacsGcc;
-    extraPackages = epkgs: [ epkgs.vterm ];
+    enableContribAndExtras = true;
   };
 
   home.file = {
-    ".config/emacs" = {
+    ".config/xmonad" = {
       source = ./assets;
       recursive = true;
     };

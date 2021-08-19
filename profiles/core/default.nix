@@ -124,6 +124,7 @@ in
     interactiveShellInit = ''
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
       export PATH="$HOME/.local/bin:$PATH"
+      export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
     '';
   };
 
