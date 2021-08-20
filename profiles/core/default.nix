@@ -32,6 +32,7 @@ in
       fd # :power [ find ]
       git # :for version control
       curl # :for network
+      unzip # :for zip
       gotop # :replace [ top ]
       #  neovim # :replace [ vim ]
       pandoc # :for transfer file

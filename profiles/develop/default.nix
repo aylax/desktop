@@ -12,5 +12,8 @@
     # debugger
     gdb
 
+    # x-agent gui
+    qv2ray
+
   ];
 }
