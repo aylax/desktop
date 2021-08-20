@@ -11,11 +11,11 @@
 
 
 ## Todo
-- [ - ] Secret support
-- [ - ] Mail support
-- [ - ] Beautify Xmonad
-- [ - ] Improve configuration.
-- [ - ] Upgrade devos from [DevOS :: Core](https://github.com/divnix/devos.git)
+- [ ] Secret support
+- [ ] Mail support
+- [ ] Beautify Xmonad
+- [ ] Improve configuration.
+- [ ] Upgrade devos from [DevOS :: Core](https://github.com/divnix/devos.git)
 to [DevOS :: Main](https://github.com/divnix/devos.git)
 
 
