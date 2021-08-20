@@ -41,6 +41,7 @@ in
       exa # :replace [ ls tree ]
       zoxide # :for quick cd
       ripgrep # :replace [ grep ]
+      chromium #:for browser
     ];
 
     shellAliases =
