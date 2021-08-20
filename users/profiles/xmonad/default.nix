@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   xsession.windowManger.xmonad = {
-    enable = true;
+    enable = false;
     enableContribAndExtras = true;
   };
 
