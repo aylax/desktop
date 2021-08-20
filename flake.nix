@@ -131,7 +131,9 @@
               openssh
               develop
               printing
-              graphical
+
+              desktop.plasma
+              # desktop.xmonad
             ];
           };
         };

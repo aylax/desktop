@@ -5,10 +5,10 @@
     extraPackages = epkgs: [ epkgs.vterm ];
   };
 
-  # home.file = {
-  #   ".config/emacs" = {
-  #     source = ./assets;
-  #     recursive = true;
-  #   };
-  # };
+  home.file = {
+    ".config/emacs" = {
+      source = ./assets;
+      recursive = true;
+    };
+  };
 }

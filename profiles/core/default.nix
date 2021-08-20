@@ -32,6 +32,7 @@ in
       fd # :power [ find ]
       git # :for version control
       curl # :for network
+      unzip # :for zip
       gotop # :replace [ top ]
       #  neovim # :replace [ vim ]
       pandoc # :for transfer file
@@ -41,6 +42,7 @@ in
       exa # :replace [ ls tree ]
       zoxide # :for quick cd
       ripgrep # :replace [ grep ]
+      chromium #:for browser
     ];
 
     shellAliases =
@@ -124,6 +126,7 @@ in
     interactiveShellInit = ''
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
       export PATH="$HOME/.local/bin:$PATH"
+      export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
     '';
   };
 

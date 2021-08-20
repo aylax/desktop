@@ -8,25 +8,21 @@
 # foot:
 
 
-
+##############################################################
 # Type:
-#  - fix  fix bug
-#  - doc  doc & res
-#  - coq  test case
-#  - new  new feature
-#  - fmt  format code
-#  - rat  do refactor 
-#
-# Scope: effect scope    
-#
+##  - fix  fix bug
+##  - doc  doc & res
+##  - coq  test case
+##  - new  new feature
+##  - fmt  format code
+##  - rat  do refactor
+
+# Scope: effect scope
+
 # Subject: commit message
-#
-# Body: detailed description 
-#
+
+# Body: detailed description
+
 # Foot: issues or change log
-#
-#
-# Tip: git config --global commit.template git-commit.template
 
-
-
+# ##############################################################
