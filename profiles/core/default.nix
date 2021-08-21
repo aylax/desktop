@@ -64,6 +64,7 @@ in
 
         # ls
         ls = "exa";
+        la = "ls -al";
         tree = "exa -T";
 
         # top
@@ -124,6 +125,7 @@ in
       eval "$(${pkgs.starship}/bin/starship init bash)"
     '';
     interactiveShellInit = ''
+      eval "$(zoxide init bash)"
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
       export PATH="$HOME/.local/bin:$PATH"
       export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
