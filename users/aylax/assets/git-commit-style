@@ -1,0 +1,36 @@
+# Happy hacking, friend - git ♥ you!
+
+
+# ---------------------------
+#  type :: scope -> subject
+#
+#  body:
+#
+#  foot:
+# ---------------------------
+
+
+# Please note that:
+#  - The HEADER is a single line of max 50 characters.
+#      + <type> This describes the kind of this commit.
+#
+#        * new (feature)
+#        * fix (bug fix)
+#        * doc (document)
+#        * fmt (format)
+#        * rat (rafactor)
+#        * coq (test)
+#
+#      + <scope> This specify the place of this commit.
+#
+#      + <subject> This shortly describe  the change.
+#
+#  - The BODY should include the motivation for the change
+#    and contrast this with previous behavior and must be
+#    phrased in imperative present tense.
+#  - The FOOT should contain any information about Breaking
+#    changes and is also the place to reference GitHub issues
+#    that this commit closes.
+
+
+# Thank you <3
