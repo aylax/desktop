@@ -2,14 +2,13 @@
 
 
 ## Getting Started
+Git clone and read the guide book to change it.
 - [master](https://github.com/aylax/desktop.git) 
-- [develop](https://github.com/aylax/desktop.git)
 
 ## Screen Shot
-<div align="center">
+<div>
   <img src="./screenshot.jpeg" width="600"
-    height="400" alt="desktop_screenshot"
-    align=center />
+    height="400" alt="desktop_screenshot" />
 </div>
 
 ## Guide
