@@ -13,6 +13,10 @@ in
       ../profiles/alacritty
       ../profiles/syncthing
     ];
+
+    home.file.".gitconfig".source = ./assets/git-config;
+    home.file.".git-commit-style".source = ./assets/git-commit-style;
+
   };
 
   users.users.aylax = {

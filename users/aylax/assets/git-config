@@ -1,0 +1,7 @@
+[user]
+  name = aylax
+  email = zhoubye@foxmail.com
+  username = aylax
+
+[commit]
+  template = ~/.git-commit-style
