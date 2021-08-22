@@ -5,6 +5,11 @@
 - [master](https://github.com/aylax/desktop.git) 
 - [develop](https://github.com/aylax/desktop.git)
 
+<div align="center">
+  <img src="./screenshot.jpeg" width="600"
+    height="400" alt="desktop_screenshot"
+    align=center />
+</div>
 
 ## Guide
 [guide](https://devos.divnix.com/start)
