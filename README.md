@@ -7,8 +7,7 @@ Git clone and read the guide book to change it.
 
 ## Screen Shot
 <div>
-  <img src="./screenshot.jpeg" width="600"
-    height="400" alt="desktop_screenshot" />
+  <img src="./screen.jpeg" width="600" height="400" alt="desktop_screen" />
 </div>
 
 ## Guide
@@ -16,12 +15,11 @@ Git clone and read the guide book to change it.
 
 
 ## Todo
-- [ ] Secret support
 - [ ] Mail support
+- [ ] Secret support
 - [ ] Beautify Xmonad
 - [ ] Improve configuration.
-- [ ] Upgrade devos from [DevOS :: Core](https://github.com/divnix/devos.git)
-to [DevOS :: Main](https://github.com/divnix/devos.git)
+- [ ] Upgrade from [DevOS :: Core] to [DevOS :: Main]
 
 
 ## Inspiration & Art :heart:
