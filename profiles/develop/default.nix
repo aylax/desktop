@@ -8,7 +8,6 @@
     rustup
     ghc
     haskellPackages.stack
-    gnuapl
 
     # debugger
     gdb
