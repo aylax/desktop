@@ -10,6 +10,7 @@ in
       ../profiles/emacs
       ../profiles/neovim
       ../profiles/direnv
+      ../profiles/social
       ../profiles/alacritty
       ../profiles/syncthing
     ];
