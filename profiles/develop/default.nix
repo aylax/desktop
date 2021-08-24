@@ -2,11 +2,13 @@
 
 {
   environment.systemPackages = with pkgs; [
+    # compiler
+    gcc
 
     # program languages
+    ghc
     nodejs
     rustup
-    ghc
     haskellPackages.stack
 
     # debugger
