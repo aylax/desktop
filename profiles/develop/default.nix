@@ -5,6 +5,9 @@
     # compiler
     gcc
 
+    # make
+    gnumake
+
     # program languages
     ghc
     nodejs
