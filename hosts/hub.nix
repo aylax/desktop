@@ -36,6 +36,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+
+  # {{{:BEGIN: hardware-configuration.nix
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "uas" "sd_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
@@ -58,5 +60,6 @@
 
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  # :ENDED:}}}
 
 }

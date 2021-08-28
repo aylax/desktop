@@ -28,6 +28,7 @@ Git clone and read the guide book to change it.
 - [Axarva](https://github.com/Axarva/dotfiles-2.0)
 - [KniairdA](https://github.com/KnairdA/nixos_home)
 - [Shift Bit](https://github.com/ShifterBit/nixos-config-devos)
+- [NixOS Hardware](https://github.com/NixOS/nixos-hardware)
 
 
 # License
