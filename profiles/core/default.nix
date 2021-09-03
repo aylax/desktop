@@ -81,21 +81,6 @@ in
       };
   };
 
-  fonts = {
-    fonts = with pkgs; [
-      powerline-fonts
-      dejavu_fonts
-    ];
-
-    fontconfig.defaultFonts = {
-
-      monospace = [ "DejaVu Sans Mono for Powerline" ];
-
-      sansSerif = [ "DejaVu Sans" ];
-
-    };
-  };
-
   nix = {
 
     autoOptimiseStore = true;
@@ -119,9 +104,6 @@ in
 
   };
 
-  # powerful shell
-  programs.xonsh.enable = true;
-
   programs.bash = {
     promptInit = ''
       eval "$(${pkgs.starship}/bin/starship init bash)"
@@ -130,7 +112,6 @@ in
       eval "$(zoxide init bash)"
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
       export PATH="$HOME/.local/bin:$PATH"
-      export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
     '';
   };
 
