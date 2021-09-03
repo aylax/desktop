@@ -18,7 +18,7 @@ git clone https://github.com/aylax/desktop.git
 nix-shell # shell context
 bud help # display bud commands
 bud rebuild lethub switch # rebuild host@lethub
-bud home switch aylax lethub # switch home by home-manager
+bud home switch aylax@lethub # switch home by home-manager
 #+end_src
 
 ** refs & thanks
