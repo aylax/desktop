@@ -1,7 +1,9 @@
 [user]
   name = aylax
-  email = zhoubye@foxmail.com
   username = aylax
+  email = zhoubye@foxmail.com
+  signingkey = 38AA8F029BC0FDAA941745528E3FA4419DF43033
 
 [commit]
+  gpgsign = true
   template = ~/.git-commit-style

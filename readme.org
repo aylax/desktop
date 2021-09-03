@@ -14,11 +14,20 @@ git clone https://github.com/aylax/desktop.git
 #+end_src
 
 ** usage
+basic operation for nixos.
 #+begin_src sh
 nix-shell # shell context
 bud help # display bud commands
-bud rebuild lethub switch # rebuild host@lethub
-bud home switch aylax@lethub # switch home by home-manager
+bud rebuild lethub switch # rebuild hostname
+bud home switch aylax@lethub # home-switch user@hostname
+#+end_src
+
+basic operation for gpg. you can upload exported public key to
+trusted server.
+#+begin_src sh
+gpg --full-generate-key # gen secret key
+gpg --list-secret-keys # list keys
+gpg --armor --export [PUB] # export public key
 #+end_src
 
 ** refs & thanks
