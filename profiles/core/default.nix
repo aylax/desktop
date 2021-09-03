@@ -59,7 +59,6 @@ in
 
         # grep
         grep = "rg";
-        gi = "grep -i";
 
         # ls
         ls = "exa";
