@@ -1,0 +1,32 @@
+#+TITLE: aylax's desktop
+#+KEYWORDS: nixos desktop
+#+DATE: 2021-08-31
+#+AUTHOR: aylax zhou
+#+EMAIL: zhoubye@foxmail.com
+#+DESCRIPTION: A description of desktop
+#+OPTIONS: author:t creator:t timestamp:t email:t
+
+The repo used to create a desktop context by nixos.
+
+** install
+#+begin_src sh
+git clone https://github.com/aylax/desktop.git
+#+end_src
+
+** usage
+#+begin_src sh
+nix-shell # shell context
+bud help # display bud commands
+bud rebuild lethub switch # rebuild host@lethub
+bud home switch aylax lethub # switch home by home-manager
+#+end_src
+
+** refs & thanks
+- [[https://github.com/divnix/devos][dev-os]]
+- [[https://github.com/Axarva/dotfiles-2.0][axarva's dotfiles]]
+- [[https://github.com/ShifterBit/nixos-config-devos][shifter bits's dotfiles]]
+- [[https://github.com/NixOS/nixos-hardware][nixos hardware]]
+- [[https://github.com/RichardLitt/standard-readme.git][standard readme]]
+
+** license
+BSD-3-Clause © aylax
