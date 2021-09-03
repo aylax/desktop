@@ -6,10 +6,8 @@ in
 {
   home-manager.users.aylax = { suites, ... }: {
     imports = suites.base ++ [
-      ../profiles/git
       ../profiles/emacs
       ../profiles/neovim
-      ../profiles/direnv
       ../profiles/social
       ../profiles/alacritty
       ../profiles/syncthing

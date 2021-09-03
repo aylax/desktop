@@ -49,7 +49,6 @@
       flake-utils.follows = "digga/flake-utils";
       # end ANTI CORRUPTION LAYER
 
-      # MAIN
       emacs = {
         type = "github";
         owner = "nix-community";
@@ -143,15 +142,14 @@
               users = digga.lib.rakeLeaves ./users;
             };
             suites = with profiles; rec {
-              base = [ core users.aylax users.root ];
-              workstation = [
-                core
-                users.root
-                users.aylax
+              base = [ core users.root users.aylax ];
+              workstation = base ++ [
                 network
-                openssh
                 develop
                 printing
+
+                security.gnu-pgp
+                security.openssh
 
                 graphic.fonts
                 graphic.wm-plasma
