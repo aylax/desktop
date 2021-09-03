@@ -23,7 +23,7 @@ in
   users.users.aylax = {
     uid = 1000;
     password = "linux";
-    description = "AyLax";
+    description = "aylax";
     isNormalUser = true;
     extraGroups = [
       "wheel"
