@@ -27,6 +27,7 @@ bud home switch aylax@lethub # switch home by home-manager
 - [[https://github.com/ShifterBit/nixos-config-devos][shifter bits's dotfiles]]
 - [[https://github.com/NixOS/nixos-hardware][nixos hardware]]
 - [[https://github.com/RichardLitt/standard-readme.git][standard readme]]
+- [[https://github.com/linyinfeng/dotfiles][ling yin feng's dotfiles]]
 
 ** license
 BSD-3-Clause © aylax
