@@ -1,4 +1,4 @@
- pkgs, lib, budUtils, ... }: {
+{ pkgs, lib, budUtils, ... }: {
   bud.cmds = with pkgs; {
     get = {
       writer = budUtils.writeBashWithPaths [ nixUnstable git coreutils ];
