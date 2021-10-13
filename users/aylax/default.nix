@@ -9,6 +9,7 @@ in
       ../profiles/emacs
       ../profiles/neovim
       ../profiles/social
+      ../profiles/vscodium
       ../profiles/alacritty
       ../profiles/syncthing
     ];
