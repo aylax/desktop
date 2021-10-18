@@ -6,3 +6,4 @@
   exportedModules = [
     ./devos.nix
   ];
+}
