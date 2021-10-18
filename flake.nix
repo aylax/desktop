@@ -49,20 +49,6 @@
       flake-utils.follows = "digga/flake-utils";
       # end ANTI CORRUPTION LAYER
 
-      emacs = {
-        type = "github";
-        owner = "nix-community";
-        repo = "emacs-overlay";
-        rev = "de44618b3268c7d3c3d4c40e1c5e662b93f5f658";
-
-      };
-
-      neovim = {
-        type = "github";
-        owner = "nix-community";
-        repo = "neovim-nightly-overlay";
-        rev = "ad6fda0e81cd8dab6326dc1a45b11024ebcda5c2";
-      };
     };
 
   outputs =
@@ -76,8 +62,6 @@
     , agenix
     , nvfetcher
     , deploy
-    , emacs
-    , neovim
     , ...
     } @ inputs:
     digga.lib.mkFlake
@@ -96,9 +80,7 @@
               nvfetcher.overlay
               deploy.overlay
               ./pkgs/default.nix
-
-              emacs.overlay
-              neovim.overlay
+              
             ];
           };
           latest = { };
