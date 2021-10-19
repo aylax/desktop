@@ -80,7 +80,7 @@
               nvfetcher.overlay
               deploy.overlay
               ./pkgs/default.nix
-              
+
             ];
           };
           latest = { };
